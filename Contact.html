@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding and responsive viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+    <!-- Primary page title that appears in browser tab -->
+    <title>SkillSphere | Home</title>
+                
+    <!-- Favicon - the small icon displayed in browser tab -->
+    <link rel="icon" href="Images/Logo.png" type="image/png">
+                
+    <!-- Main CSS stylesheet for the website -->
+    <link rel="stylesheet" href="Styles.css">
+                
+    <!-- External resources -->
+    <!-- Font Awesome for scalable vector icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+                
+    <!-- Google Fonts - Poppins with multiple font weights -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Main Header with Navigation - Contains logo and primary site navigation -->
+    <header class="header">
+        <div class="headerContainer">
+            <!-- Logo Container - Clickable logo that returns to homepage -->
+            <div class="logoContainer">
+                <a href="index.html">
+                    <img src="Images/Logo.png" alt="SkillSphere Logo" class="logo fade-in">
+                </a>
+            </div>
+            
+            <!-- Main Navigation - Primary site navigation links -->
+            <nav class="topNavigation">
+                <ul class="navigationList">
+                    <li class="navigationItem fade-in"><a href="Index.html" class="navigationLink">Home</a></li>
+                    <li class="navigationItem fade-in"><a href="About.html" class="navigationLink">About Us</a></li>
+                    <li class="navigationItem fade-in"><a href="Courses.html" class="navigationLink">Courses</a></li>
+                    <li class="navigationItem fade-in"><a href="Contact.html" class="navigationLink">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area - Contains all primary page content -->
+    <main>
+        <!-- Contact Hero Section - Introductory banner for contact page -->
+        <section class="contact-hero">
+            <div class="hero-content">
+                <h2 class="hero-title fade-in">Get In <span class="highlight">Touch</span></h2>
+                <p class="hero-subtitle">We'd love to hear from you! Reach out for inquiries, support, or just to say hello.</p>
+            </div>
+            <!-- Animated icons representing different contact methods -->
+            <div class="wiggle-icons fade-in">
+                <i class="fas fa-envelope"></i>
+                <i class="fas fa-phone-alt"></i>
+                <i class="fas fa-map-marker-alt"></i>
+                <i class="fas fa-comments"></i>
+                <i class="fas fa-headset"></i>
+            </div>
+        </section>
+
+        <!-- Main Contact Content - Contains contact info and form sections -->
+        <div class="contact-container">
+            <!-- Contact Information Section - Displays company contact details -->
+            <section class="contact-info fade-in">
+                <h2 class="section-title fade-in">Contact <span class="highlight">Information</span></h2>
+                
+                <!-- Email Information Card - Displays email contact options -->
+                <div class="info-card fade-in">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info-text">
+                        <h3>Email Us</h3>
+                        <p>info@skillsphere.com</p>
+                        <p>support@skillsphere.com</p>
+                    </div>
+                </div>
+                
+                <!-- Phone Information Card - Displays phone contact options -->
+                <div class="info-card fade-in">
+                    <div class="info-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="info-text">
+                        <h3>Call Us</h3>
+                        <p>+27 (123) 456-7890</p>
+                        <p>Mon-Fri: 8am - 5pm</p>
+                    </div>
+                </div>
+                
+                <!-- Address Information Card - Displays physical location -->
+                <div class="info-card fade-in">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info-text">
+                        <h3>Visit Us</h3>
+                        <p>123 Tech Park Drive,</p>
+                        <p>South Africa</p>
+                    </div>
+                </div>
+                
+                <!-- Social Media Links - Connect via social platforms -->
+                <div class="social-media fade-in">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="https://za.linkedin.com/" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://x.com/?lang=en" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </section>
+        
+            <!-- Contact Form Section - Form for user inquiries -->
+            <section class="contact-form fade-in">
+                <h2 class="section-title fade-in">Send Us a <span class="highlight">Message</span></h2>
+                <form id="contactForm" novalidate>
+                    <!-- Name Input - Field for user's full name -->
+                    <div class="form-group fade-in">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <!-- Email Input - Field for user's email address -->
+                    <div class="form-group fade-in">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <!-- Course Selection - Dropdown for course interest -->
+                    <div class="form-group fade-in">
+                        <label for="course">Course of Interest</label>
+                        <div class="select-wrapper">
+                            <select id="course" name="course" required>
+                                <option value="">Select a course</option>
+                                <option value="web-dev">Web Development</option>
+                                <option value="cyber">Cybersecurity</option>
+                                <option value="data-science">Data Science</option>
+                                <option value="ai-ml">AI & Machine Learning</option>
+                                <option value="cloud">Cloud Computing</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Message Input - Field for user's message -->
+                    <div class="form-group fade-in">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <!-- Submit Button - Triggers form submission -->
+                    <button type="submit" class="submit-button fade-in">
+                        Send Message <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </section>
+        </div>
+
+        <!-- Google Map Section - Embedded map showing company location -->
+        <section class="map-section">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13293.0412680252!2d18.4231425!3d-33.9248855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc6767b20b2275%3A0x3b8a6a1a7e064c9a!2sCape%20Town%20City%20Centre%2C%20Cape%20Town%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
+                    width="100%"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    title="SkillSphere Location Map">
+            </iframe>
+        </section>
+    </main>
+    
+    <!-- Footer with contact and navigation -->
+    <footer class="footer fade-in">
+        <div class="footerContainer fade-in">
+            <!-- Quick links section for easy navigation -->
+            <div class="footerSection">
+                <h3 class="footerHeading">Quick Links</h3>
+                <ul class="footerLinks">
+                    <li><a href="Index.html" class="footerLink">Home</a></li>
+                    <li><a href="About.html" class="footerLink">About Us</a></li>
+                    <li><a href="Courses.html" class="footerLink">Courses</a></li>
+                    <li><a href="Contact.html" class="footerLink">Contact</a></li>
+                </ul>
+            </div>
+    
+            <!-- Contact information section with icons -->
+            <div class="footerSection fade-in">
+                <h3 class="footerHeading">Contact Us</h3>
+                <address class="footerContact">
+                    <p><i class="fas fa-envelope"></i> info@skillshpere.com</p>
+                    <p><i class="fas fa-phone"></i> +27 (123) 456-7890</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Techno World, South Africa</p>
+                </address>
+            </div>
+    
+            <!-- Social media links with accessibility labels -->
+            <div class="footerSection fade-in">
+                <h3 class="footerHeading">Follow Us</h3>
+                <div class="socialLinks">
+                    <a href="https://www.facebook.com/" class="socialLink" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/?lang=en" class="socialLink" aria-label="X" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://za.linkedin.com/" class="socialLink" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/" class="socialLink" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Footer bottom section with copyright and back-to-top link -->
+        <div class="footerBottom fade-in">
+            <p class="copyright">&copy; 2025 SkillSphere. All rights reserved.</p>
+            <a href="Contact.html" class="backToTop" aria-label="Back to top">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+    </footer>
+    
+    <!-- Main JavaScript file for interactive elements -->
+    <script src="Script.js"></script>
+</body>
+</html>

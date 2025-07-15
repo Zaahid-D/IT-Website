@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding and responsive viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary page title that appears in browser tab -->
+    <title>SkillSphere | Home</title>
+    
+    <!-- Favicon - the small icon displayed in browser tab -->
+    <link rel="icon" href="Images/Logo.png" type="image/png">
+    
+    <!-- Main CSS stylesheet for the website -->
+    <link rel="stylesheet" href="Styles.css">
+    
+    <!-- External resources -->
+    <!-- Font Awesome for scalable vector icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Google Fonts - Poppins with multiple font weights -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Main header containing logo and navigation -->
+    <header class="header">
+        <div class="headerContainer">
+            <!-- Logo container with link back to homepage -->
+            <div class="logoContainer">
+                <a href="index.html">
+                    <img src="Images/Logo.png" alt="SkillSphere Logo" class="logo fade-in" loading="lazy">
+                </a>
+            </div>
+            
+            <!-- Primary navigation menu -->
+            <nav class="topNavigation" aria-label="Main navigation">
+                <ul class="navigationList">
+                    <!-- Each navigation item has fade-in animation -->
+                    <li class="navigationItem fade-in"><a href="Index.html" class="navigationLink">Home</a></li>
+                    <li class="navigationItem fade-in"><a href="About.html" class="navigationLink">About Us</a></li>
+                    <li class="navigationItem fade-in"><a href="Courses.html" class="navigationLink">Courses</a></li>
+                    <li class="navigationItem fade-in"><a href="Contact.html" class="navigationLink">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Main content area of the page -->
+    <main>
+        <!-- Hero section with main headline and tagline -->
+        <section class="heroSection fade-in">
+            <div class="heroContent">
+                <h1>Welcome to <span class="brandHighlight fade-in">SkillSphere</span></h1>
+                <br> 
+                <h2 class="tagline">Learn. Grow. Dominate the Digital Age.</h2>
+            </div>
+
+            <!-- Image slider section with laptop overlay effect -->
+            <div class="sliderContainer fade-in">
+                <!-- Laptop image that serves as a frame for the slider -->
+                <div class="laptopContainer">
+                    <br><br><br> 
+                    <img src="Images/Laptop.png" alt="Laptop">
+                    <br><br> 
+                </div>
+    
+                <!-- Actual image slider containing business-focused graphics -->
+                <div class="slider">
+                    <div class="list">
+                        <!-- Individual slider items with custom position properties -->
+                        <div class="item" style="--position: 1">
+                            <img src="Images/BusFocus1.png" alt="Business promotional Graphic with Icon of a Laptop" loading="lazy">
+                        </div>
+                        <div class="item" style="--position: 2">
+                            <img src="Images/BusFocus2.png" alt="Business promotional Graphic with Icon of a Calendar" loading="lazy">
+                        </div>
+                        <div class="item" style="--position: 3">
+                            <img src="Images/BusFocus3.png" alt="Business promotional Graphic with Icon of a Laptop" loading="lazy">
+                        </div>
+                        <div class="item" style="--position: 4">
+                            <img src="Images/BusFocus4.png" alt="Business promotional Graphic with Icon of a Desktop Computer" loading="lazy">
+                        </div>
+                        <div class="item" style="--position: 5">
+                            <img src="Images/BusFocus5.png" alt="Business promotional Graphic with Icon of a Cerificate" loading="lazy">
+                        </div> 
+                    </div>
+                </div>
+            </div>   
+        </section>
+
+        <!-- Call-to-action section encouraging user engagement -->
+        <section class="ctaSection fade-in">
+            <div class="ctaContainer">
+                <p class="slogan">Unlock industry-leading IT courses tailored for tomorrow's digital workforce.</p>
+                <!-- Primary call-to-action button linking to courses page -->
+                <a href="Courses.html" class="ctaButton fade-in">Start Learning Today →</a>
+            </div>
+        </section>
+    </main>
+        
+    <!-- Page footer containing multiple sections -->
+    <footer class="footer fade-in">
+        <div class="footerContainer fade-in">
+            <!-- Quick links section for easy navigation -->
+            <div class="footerSection">
+                <h3 class="footerHeading">Quick Links</h3>
+                <ul class="footerLinks">
+                    <li><a href="Index.html" class="footerLink">Home</a></li>
+                    <li><a href="About.html" class="footerLink">About Us</a></li>
+                    <li><a href="Courses.html" class="footerLink">Courses</a></li>
+                    <li><a href="Contact.html" class="footerLink">Contact</a></li>
+                </ul>
+            </div>
+    
+            <!-- Contact information section with icons -->
+            <div class="footerSection fade-in">
+                <h3 class="footerHeading">Contact Us</h3>
+                <address class="footerContact">
+                    <p><i class="fas fa-envelope"></i> info@skillshpere.com</p>
+                    <p><i class="fas fa-phone"></i> +27 (123) 456-7890</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Techno World, South Africa</p>
+                </address>
+            </div>
+    
+            <!-- Social media links with accessibility labels -->
+            <div class="footerSection fade-in">
+                <h3 class="footerHeading">Follow Us</h3>
+                <div class="socialLinks">
+                    <a href="https://www.facebook.com/" class="socialLink" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/?lang=en" class="socialLink" aria-label="X" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://za.linkedin.com/" class="socialLink" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/" class="socialLink" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Footer bottom section with copyright and back-to-top link -->
+        <div class="footerBottom fade-in">
+            <p class="copyright">&copy; 2025 SkillSphere. All rights reserved.</p>
+            <a href="Index.html" class="backToTop" aria-label="Back to top">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+    </footer>
+    
+    <!-- Main JavaScript file for interactive elements -->
+    <script src="Script.js"></script>
+</body>
+</html>
